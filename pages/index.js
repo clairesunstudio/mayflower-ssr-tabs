@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <div className={styles.container}>
 
-      <Divider />
+      {/* <Divider /> */}
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Mayflower Tabs</a>
+          Welcome to <a href="https://nextjs.org">Mayflower Tabs update</a>
         </h1>
 
         <TabContainer
@@ -34,14 +34,14 @@ export default function Home() {
                 handleClick={function noRefCheck() {}}
                 title="Sub Tab 1"
               >
-                This should support nesting like this.
+                This is the content of sub tab 1.
               </Tab>
               <Tab
                 active={false}
                 handleClick={function noRefCheck() {}}
                 title="Sub Tab 2"
               >
-                This should support nesting like this.
+                This is the content of sub tab 2.
               </Tab>
             </TabContainer>
           </Tab>
