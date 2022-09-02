@@ -1,14 +1,29 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+This 
+
 ## Getting Started
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
+yarn
 yarn dev
 ```
+
+
+### Linking to Mayflower for development
+
+Switch to the Mayflower Repo
+- Checkout MF branch [react/DP-25690-tabs-ssr-bug](https://github.com/massgov/mayflower/pull/1669/files)
+- `cd packages/react`
+- `yalc publish`
+
+Back to this repo
+- `yalc add @massds/mayflower-react`
+- `rm -fr .next` - remove cache
+- `yarn dev`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -17,6 +32,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
 
 ## Learn More
 
